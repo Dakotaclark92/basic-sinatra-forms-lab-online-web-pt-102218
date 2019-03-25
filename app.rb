@@ -8,7 +8,8 @@ class App < Sinatra::Base
   end
   
   get '/team' do
-    @name = params
+    @name = params[:name]
+    
     
     erb :team
   end
